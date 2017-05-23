@@ -1,0 +1,406 @@
+INFO  - 2017-03-14 11:19:56.711; [   ] org.eclipse.jetty.util.log.Log; Logging initialized @475ms
+INFO  - 2017-03-14 11:19:56.948; [   ] org.eclipse.jetty.server.Server; jetty-9.3.14.v20161028
+INFO  - 2017-03-14 11:19:56.984; [   ] org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor [file:///home/harbouj/Downloads/solr-6.4.2/server/contexts/] at interval 0
+INFO  - 2017-03-14 11:19:57.335; [   ] org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2017-03-14 11:19:57.376; [   ] org.apache.solr.servlet.SolrDispatchFilter;  ___      _       Welcome to Apache Solr™ version 6.4.2
+INFO  - 2017-03-14 11:19:57.381; [   ] org.apache.solr.servlet.SolrDispatchFilter; / __| ___| |_ _   Starting in cloud mode on port 7574
+INFO  - 2017-03-14 11:19:57.381; [   ] org.apache.solr.servlet.SolrDispatchFilter; \__ \/ _ \ | '_|  Install dir: /home/harbouj/Downloads/solr-6.4.2
+INFO  - 2017-03-14 11:19:57.401; [   ] org.apache.solr.servlet.SolrDispatchFilter; |___/\___/_|_|    Start time: 2017-03-14T11:19:57.383Z
+INFO  - 2017-03-14 11:19:57.419; [   ] org.apache.solr.core.SolrResourceLoader; Using system property solr.solr.home: /home/harbouj/Downloads/solr-6.4.2/example/cloud/node2/solr
+INFO  - 2017-03-14 11:19:57.496; [   ] org.apache.solr.servlet.SolrDispatchFilter; Loading solr.xml from SolrHome (not found in ZooKeeper)
+INFO  - 2017-03-14 11:19:57.498; [   ] org.apache.solr.core.SolrXmlConfig; Loading container configuration from /home/harbouj/Downloads/solr-6.4.2/example/cloud/node2/solr/solr.xml
+INFO  - 2017-03-14 11:19:57.869; [   ] org.apache.solr.update.UpdateShardHandler; Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+INFO  - 2017-03-14 11:19:57.874; [   ] org.apache.solr.core.ZkContainer; Zookeeper client=localhost:9983
+INFO  - 2017-03-14 11:19:58.093; [   ] org.apache.solr.common.cloud.ZkStateReader; Updated live nodes from ZooKeeper... (0) -> (2)
+INFO  - 2017-03-14 11:20:04.041; [   ] org.apache.solr.common.cloud.ZkStateReader; Updated live nodes from ZooKeeper... (2) -> (1)
+INFO  - 2017-03-14 11:20:04.197; [   ] org.apache.solr.cloud.ZkController; Register node as live in ZooKeeper:/live_nodes/192.168.1.156:7574_solr
+INFO  - 2017-03-14 11:20:04.250; [   ] org.apache.solr.common.cloud.ZkStateReader; Updated live nodes from ZooKeeper... (1) -> (2)
+INFO  - 2017-03-14 11:20:04.684; [   ] org.apache.solr.core.CorePropertiesLocator; Found 2 core definitions underneath /home/harbouj/Downloads/solr-6.4.2/example/cloud/node2/solr
+INFO  - 2017-03-14 11:20:04.721; [   ] org.apache.solr.core.CorePropertiesLocator; Cores are: [gettingstarted_shard2_replica2, gettingstarted_shard1_replica2]
+INFO  - 2017-03-14 11:20:04.837; [   ] org.eclipse.jetty.server.handler.ContextHandler; Started o.e.j.w.WebAppContext@59e5ddf{/solr,file:///home/harbouj/Downloads/solr-6.4.2/server/solr-webapp/webapp/,AVAILABLE}{/home/harbouj/Downloads/solr-6.4.2/server/solr-webapp/webapp}
+INFO  - 2017-03-14 11:20:04.855; [   ] org.eclipse.jetty.server.AbstractConnector; Started ServerConnector@1f6b96db{HTTP/1.1,[http/1.1]}{0.0.0.0:7574}
+INFO  - 2017-03-14 11:20:04.856; [   ] org.eclipse.jetty.server.Server; Started @8622ms
+INFO  - 2017-03-14 11:20:04.934; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.RequestParams; conf resource params.json loaded . version : 0 
+INFO  - 2017-03-14 11:20:04.937; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.RequestParams; request params refreshed to version 0
+INFO  - 2017-03-14 11:20:04.950; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.SolrResourceLoader; [gettingstarted_shard2_replica2] Added 51 libs to classloader, from paths: [/home/harbouj/Downloads/solr-6.4.2/contrib/clustering/lib, /home/harbouj/Downloads/solr-6.4.2/contrib/extraction/lib, /home/harbouj/Downloads/solr-6.4.2/contrib/langid/lib, /home/harbouj/Downloads/solr-6.4.2/contrib/velocity/lib, /home/harbouj/Downloads/solr-6.4.2/dist]
+INFO  - 2017-03-14 11:20:04.955; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.RequestParams; conf resource params.json loaded . version : 0 
+INFO  - 2017-03-14 11:20:04.955; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.RequestParams; request params refreshed to version 0
+INFO  - 2017-03-14 11:20:04.965; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.SolrResourceLoader; [gettingstarted_shard1_replica2] Added 51 libs to classloader, from paths: [/home/harbouj/Downloads/solr-6.4.2/contrib/clustering/lib, /home/harbouj/Downloads/solr-6.4.2/contrib/extraction/lib, /home/harbouj/Downloads/solr-6.4.2/contrib/langid/lib, /home/harbouj/Downloads/solr-6.4.2/contrib/velocity/lib, /home/harbouj/Downloads/solr-6.4.2/dist]
+INFO  - 2017-03-14 11:20:04.986; [   ] org.apache.solr.common.cloud.ZkStateReader$StateWatcher; A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+INFO  - 2017-03-14 11:20:05.168; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 6.4.2
+INFO  - 2017-03-14 11:20:05.182; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 6.4.2
+INFO  - 2017-03-14 11:20:05.594; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.schema.IndexSchema; [gettingstarted_shard1_replica2] Schema name=example-data-driven-schema
+INFO  - 2017-03-14 11:20:05.645; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.schema.IndexSchema; [gettingstarted_shard2_replica2] Schema name=example-data-driven-schema
+WARN  - 2017-03-14 11:20:05.910; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.SolrResourceLoader; Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+INFO  - 2017-03-14 11:20:06.633; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.schema.IndexSchema; Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+INFO  - 2017-03-14 11:20:06.634; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.schema.IndexSchema; Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+INFO  - 2017-03-14 11:20:06.929; [   ] org.apache.solr.common.cloud.ZkStateReader$StateWatcher; A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+INFO  - 2017-03-14 11:20:06.960; [   ] org.apache.solr.handler.admin.CoreAdminOperation; It has been requested that we recover: core=gettingstarted_shard1_replica2
+INFO  - 2017-03-14 11:20:06.962; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={core=gettingstarted_shard1_replica2&action=REQUESTRECOVERY&wt=javabin&version=2} status=0 QTime=34
+INFO  - 2017-03-14 11:20:06.965; [   ] org.apache.solr.handler.admin.CoreAdminOperation; It has been requested that we recover: core=gettingstarted_shard2_replica2
+ERROR - 2017-03-14 11:20:06.974; [   ] org.apache.solr.common.SolrException; Could not find core to call recovery:gettingstarted_shard1_replica2
+INFO  - 2017-03-14 11:20:06.976; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={core=gettingstarted_shard2_replica2&action=REQUESTRECOVERY&wt=javabin&version=2} status=0 QTime=60
+ERROR - 2017-03-14 11:20:06.978; [   ] org.apache.solr.common.SolrException; Could not find core to call recovery:gettingstarted_shard2_replica2
+INFO  - 2017-03-14 11:20:07.053; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.CoreContainer; Creating SolrCore 'gettingstarted_shard1_replica2' using configuration from collection gettingstarted
+INFO  - 2017-03-14 11:20:07.075; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.CoreContainer; Creating SolrCore 'gettingstarted_shard2_replica2' using configuration from collection gettingstarted
+INFO  - 2017-03-14 11:20:07.133; [   ] org.apache.solr.common.cloud.ZkStateReader$StateWatcher; A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+INFO  - 2017-03-14 11:20:07.155; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.SolrCore; [[gettingstarted_shard2_replica2] ] Opening new SolrCore at [/home/harbouj/Downloads/solr-6.4.2/example/cloud/node2/solr/gettingstarted_shard2_replica2], dataDir=[/home/harbouj/Downloads/solr-6.4.2/example/cloud/node2/solr/gettingstarted_shard2_replica2/data/]
+INFO  - 2017-03-14 11:20:07.159; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=109
+INFO  - 2017-03-14 11:20:07.157; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.SolrCore; [[gettingstarted_shard1_replica2] ] Opening new SolrCore at [/home/harbouj/Downloads/solr-6.4.2/example/cloud/node2/solr/gettingstarted_shard1_replica2], dataDir=[/home/harbouj/Downloads/solr-6.4.2/example/cloud/node2/solr/gettingstarted_shard1_replica2/data/]
+INFO  - 2017-03-14 11:20:07.200; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@550dbc7a
+INFO  - 2017-03-14 11:20:07.206; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@550dbc7a
+INFO  - 2017-03-14 11:20:07.241; [   ] org.apache.solr.handler.admin.CollectionsHandler; Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json and sendToOCPQueue=true
+INFO  - 2017-03-14 11:20:07.259; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=58
+INFO  - 2017-03-14 11:20:07.511; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2017-03-14 11:20:07.514; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2017-03-14 11:20:07.833; [   ] org.apache.solr.common.cloud.ZkStateReader$StateWatcher; A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+INFO  - 2017-03-14 11:20:08.555; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.update.UpdateHandler; Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+INFO  - 2017-03-14 11:20:08.555; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.update.UpdateLog; Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+INFO  - 2017-03-14 11:20:08.558; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.update.UpdateHandler; Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+INFO  - 2017-03-14 11:20:08.589; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.update.UpdateLog; Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+INFO  - 2017-03-14 11:20:08.775; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2017-03-14 11:20:08.777; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.update.CommitTracker; Soft AutoCommit: if uncommited for 3000ms; 
+INFO  - 2017-03-14 11:20:08.798; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2017-03-14 11:20:08.803; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.update.CommitTracker; Soft AutoCommit: if uncommited for 3000ms; 
+INFO  - 2017-03-14 11:20:09.720; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.search.SolrIndexSearcher; Opening [Searcher@1fdee6cb[gettingstarted_shard1_replica2] main]
+INFO  - 2017-03-14 11:20:09.726; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.search.SolrIndexSearcher; Opening [Searcher@59979e2d[gettingstarted_shard2_replica2] main]
+INFO  - 2017-03-14 11:20:09.740; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Configured ZooKeeperStorageIO with znodeBase: /configs/gettingstarted
+INFO  - 2017-03-14 11:20:09.740; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Configured ZooKeeperStorageIO with znodeBase: /configs/gettingstarted
+INFO  - 2017-03-14 11:20:09.772; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.rest.ManagedResourceStorage; Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/gettingstarted
+INFO  - 2017-03-14 11:20:09.772; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/gettingstarted
+INFO  - 2017-03-14 11:20:09.779; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2017-03-14 11:20:09.779; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2017-03-14 11:20:09.789; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2017-03-14 11:20:09.796; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2017-03-14 11:20:09.808; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2017-03-14 11:20:09.809; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2017-03-14 11:20:09.819; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2017-03-14 11:20:09.823; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2017-03-14 11:20:09.851; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2017-03-14 11:20:09.857; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2017-03-14 11:20:09.926; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@59979e2d[gettingstarted_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1z(6.4.2):C2290) Uninverting(_1y(6.4.2):C3) Uninverting(_20(6.4.2):C20) Uninverting(_21(6.4.2):C18) Uninverting(_22(6.4.2):C3) Uninverting(_23(6.4.2):C5)))}
+INFO  - 2017-03-14 11:20:09.926; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2017-03-14 11:20:09.926; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2017-03-14 11:20:09.931; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.SolrCore; [gettingstarted_shard2_replica2] Registered new searcher Searcher@59979e2d[gettingstarted_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1z(6.4.2):C2290) Uninverting(_1y(6.4.2):C3) Uninverting(_20(6.4.2):C20) Uninverting(_21(6.4.2):C18) Uninverting(_22(6.4.2):C3) Uninverting(_23(6.4.2):C5)))}
+INFO  - 2017-03-14 11:20:09.937; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@1fdee6cb[gettingstarted_shard1_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1y(6.4.2):C2296) Uninverting(_1z(6.4.2):C36) Uninverting(_20(6.4.2):C14) Uninverting(_21(6.4.2):C1) Uninverting(_22(6.4.2):C5)))}
+INFO  - 2017-03-14 11:20:09.937; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2017-03-14 11:20:09.937; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2017-03-14 11:20:09.945; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.SolrCore; [gettingstarted_shard1_replica2] Registered new searcher Searcher@1fdee6cb[gettingstarted_shard1_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1y(6.4.2):C2296) Uninverting(_1z(6.4.2):C36) Uninverting(_20(6.4.2):C14) Uninverting(_21(6.4.2):C1) Uninverting(_22(6.4.2):C5)))}
+INFO  - 2017-03-14 11:20:10.070; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.ZkController; Core needs to recover:gettingstarted_shard2_replica2
+INFO  - 2017-03-14 11:20:10.071; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.cloud.ZkController; Core needs to recover:gettingstarted_shard1_replica2
+INFO  - 2017-03-14 11:20:10.073; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState$2; Running recovery
+INFO  - 2017-03-14 11:20:10.081; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.update.DefaultSolrCoreState$2; Running recovery
+INFO  - 2017-03-14 11:20:10.085; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.cloud.RecoveryStrategy; Starting recovery process. recoveringAfterStartup=true
+INFO  - 2017-03-14 11:20:10.087; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.RecoveryStrategy; Starting recovery process. recoveringAfterStartup=true
+INFO  - 2017-03-14 11:20:10.099; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.cloud.RecoveryStrategy; ###### startupVersions=[[1561841217183940608, 1561841217182892033, 1561841217182892032, 1561841217181843456, 1561841217179746304, 1561839575777673216, 1561838408427372544, 1561838408335097856, 1561838408293154816, 1561838408280571904, 1561838407749992448, 1561838407747895296, 1561838407745798144, 1561838407613677568, 1561838407612628992, 1561838407595851777, 1561838407595851776, 1561838407045349376, 1561838406810468352, 1561838405294227456, 1561837485474971648, 1561837485461340160, 1561837485402619904, 1561837485386891264, 1561837485369065472, 1561837485327122432, 1561837485260013568, 1561837485210730496, 1561837485192904704, 1561837485160398848, 1561837485125795840, 1561837485096435712, 1561837485083852800, 1561837485051346944, 1561837485032472576, 1561837484552224768, 1561837484519718912, 1561837484452610048, 1561837484429541376, 1561837484414861312, 1561837484397035520, 1561837484372918272, 1561837484354043904, 1561837484322586624, 1561837484304760832, 1561837484249186304, 1561837484181028864, 1561837484123357184, 1561837484105531392, 1561837484051005440, 1561837483979702272, 1561837483873796096, 1561837483757404160, 1561837483567611904, 1561837483519377408, 1561837483379916800, 1561837483114627072, 1561837483009769472, 1561837482936369152, 1561837482818928640, 1561837482644865024, 1561837482569367552, 1561837482444587008, 1561837482395303936, 1561837482112188416, 1561837481989505024, 1561837481936027648, 1561837481724215296, 1561837481682272256, 1561837481660252160, 1561837481641377792, 1561837481597337600, 1561837481549103104, 1561837481491431424, 1561837481420128256, 1561837481406496768, 1561837481375039488, 1561837481344630784, 1561837481210413056, 1561837481137012736, 1561837480782594048, 1561837480670396416, 1561837480531984384, 1561837480435515392, 1561837480257257472, 1561837480209022976, 1561837480127234048, 1561837479782252544, 1561837479644889088, 1561837479605043200, 1561837479506477056, 1561837479399522304, 1561837479317733376, 1561837479298859008, 1561837479225458688, 1561837479205535744]]
+INFO  - 2017-03-14 11:20:10.109; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.cloud.RecoveryStrategy; Begin buffering updates. core=[gettingstarted_shard1_replica2]
+INFO  - 2017-03-14 11:20:10.110; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.update.UpdateLog; Starting to buffer updates. FSUpdateLog{state=ACTIVE, tlog=null}
+INFO  - 2017-03-14 11:20:10.110; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.cloud.RecoveryStrategy; Publishing state of core [gettingstarted_shard1_replica2] as recovering, leader is [http://192.168.1.156:8983/solr/gettingstarted_shard1_replica1/] and I am [http://192.168.1.156:7574/solr/gettingstarted_shard1_replica2/]
+INFO  - 2017-03-14 11:20:10.114; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.RecoveryStrategy; ###### startupVersions=[[1561841217196523521, 1561841217196523520, 1561841217194426368, 1561841217175552000, 1561841217173454848, 1561839576387944448, 1561839576297766912, 1561839576291475456, 1561838408425275392, 1561838408398012416, 1561838408378089472, 1561838408359215104, 1561838408346632192, 1561838408309932032, 1561838408280571904, 1561838408278474752, 1561838407597948929, 1561838407597948928, 1561838407596900352, 1561838407595851777, 1561838407595851776, 1561838407590608896, 1561838407588511744, 1561838406293520384, 1561838406069125120, 1561838406051299328, 1561837485506428928, 1561837485496991744, 1561837485486505984, 1561837485448757248, 1561837485436174336, 1561837485418348544, 1561837485354385408, 1561837485338656768, 1561837485305102336, 1561837485283082240, 1561837485224361984, 1561837485179273216, 1561837485143621632, 1561837485069172736, 1561837484535447552, 1561837484493504512, 1561837484469387264, 1561837484338315264, 1561837484260720640, 1561837484221923328, 1561837484152717312, 1561837484139085824, 1561837484075122688, 1561837484034228224, 1561837483947196416, 1561837483911544832, 1561837483821367296, 1561837483730141184, 1561837483666178048, 1561837483613749248, 1561837483488968704, 1561837483322245120, 1561837483231019008, 1561837483159715840, 1561837483053809664, 1561837482965729280, 1561837482911203328, 1561837482701488128, 1561837482554687488, 1561837482510647296, 1561837482299883520, 1561837482262134784, 1561837482188734464, 1561837482070245376, 1561837481888841728, 1561837481854238720, 1561837481819635712, 1561837481778741248, 1561837481752526848, 1561837481464168448, 1561837481313173504, 1561837481283813376, 1561837481238724608, 1561837481077243904, 1561837481004892160, 1561837480895840256, 1561837480840265728, 1561837480572878848, 1561837480482701312, 1561837480382038016, 1561837480329609216, 1561837480046493696, 1561837479998259200, 1561837479954219008, 1561837479917518848, 1561837479823147008, 1561837479728775168, 1561837479573585920, 1561837479442513920, 1561837479354433536]]
+INFO  - 2017-03-14 11:20:10.118; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.RecoveryStrategy; Begin buffering updates. core=[gettingstarted_shard2_replica2]
+INFO  - 2017-03-14 11:20:10.137; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to [http://192.168.1.156:8983/solr]; [WaitForState: action=PREPRECOVERY&core=gettingstarted_shard1_replica1&nodeName=192.168.1.156:7574_solr&coreNodeName=core_node3&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true]
+INFO  - 2017-03-14 11:20:10.146; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.update.UpdateLog; Starting to buffer updates. FSUpdateLog{state=ACTIVE, tlog=null}
+INFO  - 2017-03-14 11:20:10.147; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.RecoveryStrategy; Publishing state of core [gettingstarted_shard2_replica2] as recovering, leader is [http://192.168.1.156:8983/solr/gettingstarted_shard2_replica1/] and I am [http://192.168.1.156:7574/solr/gettingstarted_shard2_replica2/]
+INFO  - 2017-03-14 11:20:10.152; [   ] org.apache.solr.common.cloud.ZkStateReader$StateWatcher; A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+INFO  - 2017-03-14 11:20:10.168; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to [http://192.168.1.156:8983/solr]; [WaitForState: action=PREPRECOVERY&core=gettingstarted_shard2_replica1&nodeName=192.168.1.156:7574_solr&coreNodeName=core_node4&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true]
+INFO  - 2017-03-14 11:20:10.380; [   ] org.apache.solr.common.cloud.ZkStateReader$StateWatcher; A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+INFO  - 2017-03-14 11:20:17.171; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from [http://192.168.1.156:8983/solr/gettingstarted_shard1_replica1/] - recoveringAfterStartup=[true]
+INFO  - 2017-03-14 11:20:17.183; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.1.156:7574/solr START replicas=[http://192.168.1.156:8983/solr/gettingstarted_shard1_replica1/] nUpdates=100
+INFO  - 2017-03-14 11:20:17.274; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.SolrCore; Caching fingerprint for searcher:Searcher@1fdee6cb[gettingstarted_shard1_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1y(6.4.2):C2296) Uninverting(_1z(6.4.2):C36) Uninverting(_20(6.4.2):C14) Uninverting(_21(6.4.2):C1) Uninverting(_22(6.4.2):C5)))} leafReaderContext:LeafReaderContext(FilterLeafReader(Uninverting(_1y(6.4.2):C2296)) docBase=0 ord=0) mavVersion:9223372036854775807
+INFO  - 2017-03-14 11:20:17.280; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.SolrCore; Caching fingerprint for searcher:Searcher@1fdee6cb[gettingstarted_shard1_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1y(6.4.2):C2296) Uninverting(_1z(6.4.2):C36) Uninverting(_20(6.4.2):C14) Uninverting(_21(6.4.2):C1) Uninverting(_22(6.4.2):C5)))} leafReaderContext:LeafReaderContext(FilterLeafReader(Uninverting(_1z(6.4.2):C36)) docBase=2296 ord=1) mavVersion:9223372036854775807
+INFO  - 2017-03-14 11:20:17.282; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.SolrCore; Caching fingerprint for searcher:Searcher@1fdee6cb[gettingstarted_shard1_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1y(6.4.2):C2296) Uninverting(_1z(6.4.2):C36) Uninverting(_20(6.4.2):C14) Uninverting(_21(6.4.2):C1) Uninverting(_22(6.4.2):C5)))} leafReaderContext:LeafReaderContext(FilterLeafReader(Uninverting(_20(6.4.2):C14)) docBase=2332 ord=2) mavVersion:9223372036854775807
+INFO  - 2017-03-14 11:20:17.284; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.SolrCore; Caching fingerprint for searcher:Searcher@1fdee6cb[gettingstarted_shard1_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1y(6.4.2):C2296) Uninverting(_1z(6.4.2):C36) Uninverting(_20(6.4.2):C14) Uninverting(_21(6.4.2):C1) Uninverting(_22(6.4.2):C5)))} leafReaderContext:LeafReaderContext(FilterLeafReader(Uninverting(_21(6.4.2):C1)) docBase=2346 ord=3) mavVersion:9223372036854775807
+INFO  - 2017-03-14 11:20:17.285; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.SolrCore; Caching fingerprint for searcher:Searcher@1fdee6cb[gettingstarted_shard1_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1y(6.4.2):C2296) Uninverting(_1z(6.4.2):C36) Uninverting(_20(6.4.2):C14) Uninverting(_21(6.4.2):C1) Uninverting(_22(6.4.2):C5)))} leafReaderContext:LeafReaderContext(FilterLeafReader(Uninverting(_22(6.4.2):C5)) docBase=2347 ord=4) mavVersion:9223372036854775807
+INFO  - 2017-03-14 11:20:17.286; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.update.IndexFingerprint; IndexFingerprint millis:23.0 result:{maxVersionSpecified=9223372036854775807, maxVersionEncountered=1561841217183940608, maxInHash=1561841217183940608, versionsHash=-8709655992249722452, numVersions=2352, numDocs=2352, maxDoc=2296}
+INFO  - 2017-03-14 11:20:17.287; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.update.PeerSync; We are already in sync. No need to do a PeerSync 
+INFO  - 2017-03-14 11:20:17.290; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2017-03-14 11:20:17.290; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2017-03-14 11:20:17.308; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2017-03-14 11:20:17.308; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.cloud.RecoveryStrategy; PeerSync stage of recovery was successful.
+INFO  - 2017-03-14 11:20:17.308; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.cloud.RecoveryStrategy; Replaying updates buffered during PeerSync.
+INFO  - 2017-03-14 11:20:17.308; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.cloud.RecoveryStrategy; No replay needed.
+INFO  - 2017-03-14 11:20:17.309; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.cloud.RecoveryStrategy; Registering as Active after recovery.
+INFO  - 2017-03-14 11:20:17.351; [   ] org.apache.solr.common.cloud.ZkStateReader$StateWatcher; A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+INFO  - 2017-03-14 11:20:18.220; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from [http://192.168.1.156:8983/solr/gettingstarted_shard2_replica1/] - recoveringAfterStartup=[true]
+INFO  - 2017-03-14 11:20:18.220; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.1.156:7574/solr START replicas=[http://192.168.1.156:8983/solr/gettingstarted_shard2_replica1/] nUpdates=100
+INFO  - 2017-03-14 11:20:18.237; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.SolrCore; Caching fingerprint for searcher:Searcher@59979e2d[gettingstarted_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1z(6.4.2):C2290) Uninverting(_1y(6.4.2):C3) Uninverting(_20(6.4.2):C20) Uninverting(_21(6.4.2):C18) Uninverting(_22(6.4.2):C3) Uninverting(_23(6.4.2):C5)))} leafReaderContext:LeafReaderContext(FilterLeafReader(Uninverting(_1z(6.4.2):C2290)) docBase=0 ord=0) mavVersion:9223372036854775807
+INFO  - 2017-03-14 11:20:18.238; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.SolrCore; Caching fingerprint for searcher:Searcher@59979e2d[gettingstarted_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1z(6.4.2):C2290) Uninverting(_1y(6.4.2):C3) Uninverting(_20(6.4.2):C20) Uninverting(_21(6.4.2):C18) Uninverting(_22(6.4.2):C3) Uninverting(_23(6.4.2):C5)))} leafReaderContext:LeafReaderContext(FilterLeafReader(Uninverting(_1y(6.4.2):C3)) docBase=2290 ord=1) mavVersion:9223372036854775807
+INFO  - 2017-03-14 11:20:18.239; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.SolrCore; Caching fingerprint for searcher:Searcher@59979e2d[gettingstarted_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1z(6.4.2):C2290) Uninverting(_1y(6.4.2):C3) Uninverting(_20(6.4.2):C20) Uninverting(_21(6.4.2):C18) Uninverting(_22(6.4.2):C3) Uninverting(_23(6.4.2):C5)))} leafReaderContext:LeafReaderContext(FilterLeafReader(Uninverting(_20(6.4.2):C20)) docBase=2293 ord=2) mavVersion:9223372036854775807
+INFO  - 2017-03-14 11:20:18.240; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.SolrCore; Caching fingerprint for searcher:Searcher@59979e2d[gettingstarted_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1z(6.4.2):C2290) Uninverting(_1y(6.4.2):C3) Uninverting(_20(6.4.2):C20) Uninverting(_21(6.4.2):C18) Uninverting(_22(6.4.2):C3) Uninverting(_23(6.4.2):C5)))} leafReaderContext:LeafReaderContext(FilterLeafReader(Uninverting(_21(6.4.2):C18)) docBase=2313 ord=3) mavVersion:9223372036854775807
+INFO  - 2017-03-14 11:20:18.240; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.SolrCore; Caching fingerprint for searcher:Searcher@59979e2d[gettingstarted_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1z(6.4.2):C2290) Uninverting(_1y(6.4.2):C3) Uninverting(_20(6.4.2):C20) Uninverting(_21(6.4.2):C18) Uninverting(_22(6.4.2):C3) Uninverting(_23(6.4.2):C5)))} leafReaderContext:LeafReaderContext(FilterLeafReader(Uninverting(_22(6.4.2):C3)) docBase=2331 ord=4) mavVersion:9223372036854775807
+INFO  - 2017-03-14 11:20:18.240; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.SolrCore; Caching fingerprint for searcher:Searcher@59979e2d[gettingstarted_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1z(6.4.2):C2290) Uninverting(_1y(6.4.2):C3) Uninverting(_20(6.4.2):C20) Uninverting(_21(6.4.2):C18) Uninverting(_22(6.4.2):C3) Uninverting(_23(6.4.2):C5)))} leafReaderContext:LeafReaderContext(FilterLeafReader(Uninverting(_23(6.4.2):C5)) docBase=2334 ord=5) mavVersion:9223372036854775807
+INFO  - 2017-03-14 11:20:18.241; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.update.IndexFingerprint; IndexFingerprint millis:7.0 result:{maxVersionSpecified=9223372036854775807, maxVersionEncountered=1561841217196523521, maxInHash=1561841217196523521, versionsHash=3156395440410733748, numVersions=2339, numDocs=2339, maxDoc=2290}
+INFO  - 2017-03-14 11:20:18.241; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.update.PeerSync; We are already in sync. No need to do a PeerSync 
+INFO  - 2017-03-14 11:20:18.241; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2017-03-14 11:20:18.241; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2017-03-14 11:20:18.244; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2017-03-14 11:20:18.244; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.RecoveryStrategy; PeerSync stage of recovery was successful.
+INFO  - 2017-03-14 11:20:18.244; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.RecoveryStrategy; Replaying updates buffered during PeerSync.
+INFO  - 2017-03-14 11:20:18.244; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.RecoveryStrategy; No replay needed.
+INFO  - 2017-03-14 11:20:18.244; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.RecoveryStrategy; Registering as Active after recovery.
+INFO  - 2017-03-14 11:20:18.407; [   ] org.apache.solr.common.cloud.ZkStateReader$StateWatcher; A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+INFO  - 2017-03-14 11:21:15.195; [   ] org.apache.solr.common.cloud.ZkStateReader$StateWatcher; A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+WARN  - 2017-03-14 11:21:15.684; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@32099d0 name: ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:Disconnected type:None path:null path: null type: None
+WARN  - 2017-03-14 11:21:15.684; [   ] org.apache.solr.common.cloud.ConnectionManager; zkClient has disconnected
+WARN  - 2017-03-14 11:21:16.988; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+INFO  - 2017-03-14 11:21:17.602; [   ] org.eclipse.jetty.server.AbstractConnector; Stopped ServerConnector@1f6b96db{HTTP/1.1,[http/1.1]}{0.0.0.0:7574}
+INFO  - 2017-03-14 11:21:17.603; [   ] org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=1353070773
+WARN  - 2017-03-14 11:21:18.292; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:20.217; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:22.111; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:23.871; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:25.631; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:27.486; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:29.546; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:31.214; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:33.173; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:35.049; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:37.042; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:38.975; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:40.986; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:42.545; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+WARN  - 2017-03-14 11:21:44.202; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+ERROR - 2017-03-14 11:21:44.304; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.Overseer; Could not create Overseer node
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /overseer
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:783)
+	at org.apache.solr.common.cloud.SolrZkClient$9.execute(SolrZkClient.java:391)
+	at org.apache.solr.common.cloud.SolrZkClient$9.execute(SolrZkClient.java:388)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:60)
+	at org.apache.solr.common.cloud.SolrZkClient.create(SolrZkClient.java:388)
+	at org.apache.solr.cloud.Overseer.createOverseerNode(Overseer.java:728)
+	at org.apache.solr.cloud.Overseer.getStateUpdateQueue(Overseer.java:601)
+	at org.apache.solr.cloud.Overseer.getStateUpdateQueue(Overseer.java:588)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.runLeaderProcess(ElectionContext.java:310)
+	at org.apache.solr.cloud.LeaderElector.runIamLeaderProcess(LeaderElector.java:170)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:135)
+	at org.apache.solr.cloud.LeaderElector.access$200(LeaderElector.java:56)
+	at org.apache.solr.cloud.LeaderElector$ElectionWatcher.process(LeaderElector.java:348)
+	at org.apache.solr.common.cloud.SolrZkClient$3.lambda$process$0(SolrZkClient.java:268)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+WARN  - 2017-03-14 11:21:44.304; [   ] org.apache.solr.cloud.LeaderElector$ElectionWatcher; 
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /collections/gettingstarted/leader_elect/shard1/election
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1472)
+	at org.apache.solr.common.cloud.SolrZkClient$6.execute(SolrZkClient.java:339)
+	at org.apache.solr.common.cloud.SolrZkClient$6.execute(SolrZkClient.java:336)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:60)
+	at org.apache.solr.common.cloud.SolrZkClient.getChildren(SolrZkClient.java:336)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:105)
+	at org.apache.solr.cloud.LeaderElector.access$200(LeaderElector.java:56)
+	at org.apache.solr.cloud.LeaderElector$ElectionWatcher.process(LeaderElector.java:348)
+	at org.apache.solr.common.cloud.SolrZkClient$3.lambda$process$0(SolrZkClient.java:268)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+WARN  - 2017-03-14 11:21:44.304; [   ] org.apache.solr.common.cloud.ZkStateReader$LiveNodeWatcher; ZooKeeper watch triggered, but Solr cannot talk to ZK: [KeeperErrorCode = ConnectionLoss for /live_nodes]
+WARN  - 2017-03-14 11:21:44.304; [   ] org.apache.solr.cloud.LeaderElector$ElectionWatcher; 
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /overseer_elect/election
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getChildren(ZooKeeper.java:1472)
+	at org.apache.solr.common.cloud.SolrZkClient$6.execute(SolrZkClient.java:339)
+	at org.apache.solr.common.cloud.SolrZkClient$6.execute(SolrZkClient.java:336)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:60)
+	at org.apache.solr.common.cloud.SolrZkClient.getChildren(SolrZkClient.java:336)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:105)
+	at org.apache.solr.cloud.LeaderElector.access$200(LeaderElector.java:56)
+	at org.apache.solr.cloud.LeaderElector$ElectionWatcher.process(LeaderElector.java:348)
+	at org.apache.solr.common.cloud.SolrZkClient$3.lambda$process$0(SolrZkClient.java:268)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+WARN  - 2017-03-14 11:21:44.306; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.cloud.LeaderElector$ElectionWatcher; 
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /overseer
+	at org.apache.solr.cloud.Overseer.createOverseerNode(Overseer.java:737)
+	at org.apache.solr.cloud.Overseer.getStateUpdateQueue(Overseer.java:601)
+	at org.apache.solr.cloud.Overseer.getStateUpdateQueue(Overseer.java:588)
+	at org.apache.solr.cloud.ShardLeaderElectionContext.runLeaderProcess(ElectionContext.java:310)
+	at org.apache.solr.cloud.LeaderElector.runIamLeaderProcess(LeaderElector.java:170)
+	at org.apache.solr.cloud.LeaderElector.checkIfIamLeader(LeaderElector.java:135)
+	at org.apache.solr.cloud.LeaderElector.access$200(LeaderElector.java:56)
+	at org.apache.solr.cloud.LeaderElector$ElectionWatcher.process(LeaderElector.java:348)
+	at org.apache.solr.common.cloud.SolrZkClient$3.lambda$process$0(SolrZkClient.java:268)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /overseer
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:783)
+	at org.apache.solr.common.cloud.SolrZkClient$9.execute(SolrZkClient.java:391)
+	at org.apache.solr.common.cloud.SolrZkClient$9.execute(SolrZkClient.java:388)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:60)
+	at org.apache.solr.common.cloud.SolrZkClient.create(SolrZkClient.java:388)
+	at org.apache.solr.cloud.Overseer.createOverseerNode(Overseer.java:728)
+	... 14 more
+WARN  - 2017-03-14 11:21:46.141; [   ] org.apache.zookeeper.ClientCnxn$SendThread; Session 0x15acc8ba4b70002 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+ERROR - 2017-03-14 11:21:46.242; [   ] org.apache.solr.cloud.Overseer; Could not create Overseer node
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /overseer
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:783)
+	at org.apache.solr.common.cloud.SolrZkClient$9.execute(SolrZkClient.java:391)
+	at org.apache.solr.common.cloud.SolrZkClient$9.execute(SolrZkClient.java:388)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:60)
+	at org.apache.solr.common.cloud.SolrZkClient.create(SolrZkClient.java:388)
+	at org.apache.solr.cloud.Overseer.createOverseerNode(Overseer.java:728)
+	at org.apache.solr.cloud.Overseer.getStateUpdateQueue(Overseer.java:601)
+	at org.apache.solr.cloud.Overseer.getStateUpdateQueue(Overseer.java:588)
+	at org.apache.solr.cloud.ZkController.publishNodeAsDown(ZkController.java:2407)
+	at org.apache.solr.core.CoreContainer.shutdown(CoreContainer.java:629)
+	at org.apache.solr.servlet.SolrDispatchFilter.destroy(SolrDispatchFilter.java:287)
+	at org.eclipse.jetty.servlet.FilterHolder.destroyInstance(FilterHolder.java:172)
+	at org.eclipse.jetty.servlet.FilterHolder.doStop(FilterHolder.java:150)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.servlet.ServletHandler.doStop(ServletHandler.java:227)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.security.SecurityHandler.doStop(SecurityHandler.java:381)
+	at org.eclipse.jetty.security.ConstraintSecurityHandler.doStop(ConstraintSecurityHandler.java:456)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.session.SessionHandler.doStop(SessionHandler.java:127)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.handler.ContextHandler.stopContext(ContextHandler.java:825)
+	at org.eclipse.jetty.servlet.ServletContextHandler.stopContext(ServletContextHandler.java:356)
+	at org.eclipse.jetty.webapp.WebAppContext.stopWebapp(WebAppContext.java:1410)
+	at org.eclipse.jetty.webapp.WebAppContext.stopContext(WebAppContext.java:1374)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:880)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:272)
+	at org.eclipse.jetty.webapp.WebAppContext.doStop(WebAppContext.java:544)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:73)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:493)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.server.ShutdownMonitor$ShutdownMonitorRunnable.stopLifeCycles(ShutdownMonitor.java:443)
+	at org.eclipse.jetty.server.ShutdownMonitor$ShutdownMonitorRunnable.run(ShutdownMonitor.java:354)
+	at java.lang.Thread.run(Thread.java:745)
+WARN  - 2017-03-14 11:21:46.244; [   ] org.apache.solr.cloud.ZkController; Could not publish node as down: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /overseer
+INFO  - 2017-03-14 11:21:46.246; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.core.SolrCore; [gettingstarted_shard1_replica2]  CLOSING SolrCore org.apache.solr.core.SolrCore@2bea57db
+INFO  - 2017-03-14 11:21:46.246; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.core.SolrCore; [gettingstarted_shard2_replica2]  CLOSING SolrCore org.apache.solr.core.SolrCore@4a613295
+INFO  - 2017-03-14 11:21:46.322; [c:gettingstarted s:shard2 r:core_node4 x:gettingstarted_shard2_replica2] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for: solr.core.gettingstarted.shard2.replica2
+INFO  - 2017-03-14 11:21:46.327; [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica2] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for: solr.core.gettingstarted.shard1.replica2
+INFO  - 2017-03-14 11:21:46.836; [   ] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for: solr.node
+INFO  - 2017-03-14 11:21:46.841; [   ] org.eclipse.jetty.server.handler.ContextHandler; Stopped o.e.j.w.WebAppContext@59e5ddf{/solr,null,UNAVAILABLE}{/home/harbouj/Downloads/solr-6.4.2/server/solr-webapp/webapp}

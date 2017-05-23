@@ -1,0 +1,155 @@
+2017-05-23 14:24:23.170 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-05-23 14:24:24.166 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.4.2
+2017-05-23 14:24:24.166 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-05-23 14:24:24.167 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/harbouj/mycode/project/solr2
+2017-05-23 14:24:24.231 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-05-23T14:24:24.168Z
+2017-05-23 14:24:24.232 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-05-23 14:24:24.970 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/harbouj/mycode/project/solr2/server/solr
+2017-05-23 14:24:25.021 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/harbouj/mycode/project/solr2/server/solr/solr.xml
+2017-05-23 14:24:26.694 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-05-23 14:24:27.283 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 6 core definitions underneath /home/harbouj/mycode/project/solr2/server/solr
+2017-05-23 14:24:27.293 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [solr-por, core-dates, managed1-core, thecores1, core-lang, export-cores]
+2017-05-23 14:24:27.863 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.c.SolrResourceLoader [solr-por] Added 51 libs to classloader, from paths: [/home/harbouj/mycode/project/solr2/contrib/clustering/lib, /home/harbouj/mycode/project/solr2/contrib/extraction/lib, /home/harbouj/mycode/project/solr2/contrib/langid/lib, /home/harbouj/mycode/project/solr2/contrib/velocity/lib, /home/harbouj/mycode/project/solr2/dist]
+2017-05-23 14:24:27.878 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.c.SolrResourceLoader [core-dates] Added 51 libs to classloader, from paths: [/home/harbouj/mycode/project/solr2/contrib/clustering/lib, /home/harbouj/mycode/project/solr2/contrib/extraction/lib, /home/harbouj/mycode/project/solr2/contrib/langid/lib, /home/harbouj/mycode/project/solr2/contrib/velocity/lib, /home/harbouj/mycode/project/solr2/dist]
+2017-05-23 14:24:27.891 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.c.SolrResourceLoader [managed1-core] Added 51 libs to classloader, from paths: [/home/harbouj/mycode/project/solr2/contrib/clustering/lib, /home/harbouj/mycode/project/solr2/contrib/extraction/lib, /home/harbouj/mycode/project/solr2/contrib/langid/lib, /home/harbouj/mycode/project/solr2/contrib/velocity/lib, /home/harbouj/mycode/project/solr2/dist]
+2017-05-23 14:24:28.092 INFO  (main) [   ] o.e.j.s.Server Started @6893ms
+2017-05-23 14:24:29.469 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.4.2
+2017-05-23 14:24:29.470 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.4.2
+2017-05-23 14:24:29.471 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.4.2
+2017-05-23 14:24:29.920 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.s.IndexSchema [core-dates] Schema name=example-data-driven-schema
+2017-05-23 14:24:29.922 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.s.IndexSchema [managed1-core] Schema name=example-data-driven-schema
+2017-05-23 14:24:29.933 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.s.IndexSchema [solr-por] Schema name=example-data-driven-schema
+2017-05-23 14:24:30.389 WARN  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-05-23 14:24:31.245 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-05-23 14:24:31.249 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-05-23 14:24:31.258 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-05-23 14:24:31.288 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.c.CoreContainer Creating SolrCore 'solr-por' using configuration from instancedir /home/harbouj/mycode/project/solr2/server/solr/solr-por
+2017-05-23 14:24:31.335 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.c.CoreContainer Creating SolrCore 'managed1-core' using configuration from instancedir /home/harbouj/mycode/project/solr2/server/solr/managed1-core
+2017-05-23 14:24:31.336 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.c.CoreContainer Creating SolrCore 'core-dates' using configuration from instancedir /home/harbouj/mycode/project/solr2/server/solr/core-dates
+2017-05-23 14:24:31.444 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.c.SolrCore [[managed1-core] ] Opening new SolrCore at [/home/harbouj/mycode/project/solr2/server/solr/managed1-core], dataDir=[/home/harbouj/mycode/project/solr2/server/solr/managed1-core/data/]
+2017-05-23 14:24:31.445 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.c.SolrCore [[solr-por] ] Opening new SolrCore at [/home/harbouj/mycode/project/solr2/server/solr/solr-por], dataDir=[/home/harbouj/mycode/project/solr2/server/solr/solr-por/data/]
+2017-05-23 14:24:31.444 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.c.SolrCore [[core-dates] ] Opening new SolrCore at [/home/harbouj/mycode/project/solr2/server/solr/core-dates], dataDir=[/home/harbouj/mycode/project/solr2/server/solr/core-dates/data/]
+2017-05-23 14:24:31.447 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@482bce4f
+2017-05-23 14:24:31.447 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@482bce4f
+2017-05-23 14:24:31.447 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@482bce4f
+2017-05-23 14:24:31.624 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-05-23 14:24:31.625 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-05-23 14:24:31.630 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-05-23 14:24:32.404 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-05-23 14:24:32.404 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-05-23 14:24:32.404 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-05-23 14:24:32.404 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-05-23 14:24:32.404 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-05-23 14:24:32.404 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-05-23 14:24:32.420 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-05-23 14:24:32.421 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-05-23 14:24:32.564 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-05-23 14:24:32.566 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-05-23 14:24:32.683 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.s.SolrIndexSearcher Opening [Searcher@5536c7da[core-dates] main]
+2017-05-23 14:24:32.749 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/harbouj/mycode/project/solr2/server/solr/core-dates/conf
+2017-05-23 14:24:32.839 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-05-23 14:24:32.851 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-05-23 14:24:32.851 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-05-23 14:24:32.937 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-05-23 14:24:32.943 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/harbouj/mycode/project/solr2/server/solr/core-dates/conf/elevate.xml
+2017-05-23 14:24:32.981 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-05-23 14:24:33.155 INFO  (searcherExecutor-7-thread-1-processing-x:core-dates) [   x:core-dates] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5536c7da[core-dates] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-05-23 14:24:33.156 INFO  (searcherExecutor-7-thread-1-processing-x:core-dates) [   x:core-dates] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-05-23 14:24:33.156 INFO  (searcherExecutor-7-thread-1-processing-x:core-dates) [   x:core-dates] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-05-23 14:24:33.160 INFO  (searcherExecutor-7-thread-1-processing-x:core-dates) [   x:core-dates] o.a.s.c.SolrCore [core-dates] Registered new searcher Searcher@5536c7da[core-dates] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-05-23 14:24:33.187 INFO  (coreLoadExecutor-6-thread-2) [   x:core-dates] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1568197284396531712
+2017-05-23 14:24:33.430 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader [thecores1] Added 51 libs to classloader, from paths: [/home/harbouj/mycode/project/solr2/contrib/clustering/lib, /home/harbouj/mycode/project/solr2/contrib/extraction/lib, /home/harbouj/mycode/project/solr2/contrib/langid/lib, /home/harbouj/mycode/project/solr2/contrib/velocity/lib, /home/harbouj/mycode/project/solr2/dist]
+2017-05-23 14:24:33.479 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.4.2
+2017-05-23 14:24:33.506 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.s.SolrIndexSearcher Opening [Searcher@547c9503[managed1-core] main]
+2017-05-23 14:24:33.515 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/harbouj/mycode/project/solr2/server/solr/managed1-core/conf
+2017-05-23 14:24:33.525 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-05-23 14:24:33.525 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-05-23 14:24:33.531 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/harbouj/mycode/project/solr2/server/solr/managed1-core/conf/elevate.xml
+2017-05-23 14:24:33.595 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.s.SolrIndexSearcher Opening [Searcher@f9cc761[solr-por] main]
+2017-05-23 14:24:33.596 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/harbouj/mycode/project/solr2/server/solr/solr-por/conf
+2017-05-23 14:24:33.596 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-05-23 14:24:33.596 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-05-23 14:24:33.597 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/harbouj/mycode/project/solr2/server/solr/solr-por/conf/elevate.xml
+2017-05-23 14:24:33.602 INFO  (coreLoadExecutor-6-thread-3) [   x:managed1-core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-05-23 14:24:33.610 INFO  (searcherExecutor-8-thread-1-processing-x:managed1-core) [   x:managed1-core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@547c9503[managed1-core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(6.4.2):C8) Uninverting(_4(6.4.2):C22/1:delGen=1) Uninverting(_5(6.4.2):C2/1:delGen=1)))}
+2017-05-23 14:24:33.612 INFO  (searcherExecutor-8-thread-1-processing-x:managed1-core) [   x:managed1-core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-05-23 14:24:33.612 INFO  (searcherExecutor-8-thread-1-processing-x:managed1-core) [   x:managed1-core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-05-23 14:24:33.619 INFO  (searcherExecutor-8-thread-1-processing-x:managed1-core) [   x:managed1-core] o.a.s.c.SolrCore [managed1-core] Registered new searcher Searcher@547c9503[managed1-core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(6.4.2):C8) Uninverting(_4(6.4.2):C22/1:delGen=1) Uninverting(_5(6.4.2):C2/1:delGen=1)))}
+2017-05-23 14:24:33.624 INFO  (coreLoadExecutor-6-thread-1) [   x:solr-por] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-05-23 14:24:33.625 INFO  (searcherExecutor-9-thread-1-processing-x:solr-por) [   x:solr-por] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@f9cc761[solr-por] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_fk(6.4.2):C462) Uninverting(_fl(6.4.2):C1) Uninverting(_fm(6.4.2):C1) Uninverting(_fn(6.4.2):C1)))}
+2017-05-23 14:24:33.625 INFO  (searcherExecutor-9-thread-1-processing-x:solr-por) [   x:solr-por] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-05-23 14:24:33.625 INFO  (searcherExecutor-9-thread-1-processing-x:solr-por) [   x:solr-por] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-05-23 14:24:33.627 INFO  (searcherExecutor-9-thread-1-processing-x:solr-por) [   x:solr-por] o.a.s.c.SolrCore [solr-por] Registered new searcher Searcher@f9cc761[solr-por] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_fk(6.4.2):C462) Uninverting(_fl(6.4.2):C1) Uninverting(_fm(6.4.2):C1) Uninverting(_fn(6.4.2):C1)))}
+2017-05-23 14:24:33.674 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [thecores1] Schema name=example-data-driven-schema
+2017-05-23 14:24:33.741 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader [core-lang] Added 51 libs to classloader, from paths: [/home/harbouj/mycode/project/solr2/contrib/clustering/lib, /home/harbouj/mycode/project/solr2/contrib/extraction/lib, /home/harbouj/mycode/project/solr2/contrib/langid/lib, /home/harbouj/mycode/project/solr2/contrib/velocity/lib, /home/harbouj/mycode/project/solr2/dist]
+2017-05-23 14:24:33.755 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader [export-cores] Added 51 libs to classloader, from paths: [/home/harbouj/mycode/project/solr2/contrib/clustering/lib, /home/harbouj/mycode/project/solr2/contrib/extraction/lib, /home/harbouj/mycode/project/solr2/contrib/langid/lib, /home/harbouj/mycode/project/solr2/contrib/velocity/lib, /home/harbouj/mycode/project/solr2/dist]
+2017-05-23 14:24:33.907 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.4.2
+2017-05-23 14:24:33.910 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.4.2
+2017-05-23 14:24:34.064 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [export-cores] Schema name=example-data-driven-schema
+2017-05-23 14:24:34.075 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [core-lang] Schema name=example-data-driven-schema
+2017-05-23 14:24:34.705 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-05-23 14:24:34.819 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-05-23 14:24:34.848 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'thecores1' using configuration from instancedir /home/harbouj/mycode/project/solr2/server/solr/thecores1
+2017-05-23 14:24:34.849 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrCore [[thecores1] ] Opening new SolrCore at [/home/harbouj/mycode/project/solr2/server/solr/thecores1], dataDir=[/home/harbouj/mycode/project/solr2/server/solr/thecores1/data/]
+2017-05-23 14:24:34.849 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@482bce4f
+2017-05-23 14:24:34.856 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-05-23 14:24:34.891 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-05-23 14:24:34.911 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'core-lang' using configuration from instancedir /home/harbouj/mycode/project/solr2/server/solr/core-lang
+2017-05-23 14:24:34.912 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrCore [[core-lang] ] Opening new SolrCore at [/home/harbouj/mycode/project/solr2/server/solr/core-lang], dataDir=[/home/harbouj/mycode/project/solr2/server/solr/core-lang/data/]
+2017-05-23 14:24:34.912 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@482bce4f
+2017-05-23 14:24:34.921 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-05-23 14:24:34.937 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-05-23 14:24:34.937 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-05-23 14:24:34.968 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'export-cores' using configuration from instancedir /home/harbouj/mycode/project/solr2/server/solr/export-cores
+2017-05-23 14:24:34.968 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrCore [[export-cores] ] Opening new SolrCore at [/home/harbouj/mycode/project/solr2/server/solr/export-cores], dataDir=[/home/harbouj/mycode/project/solr2/server/solr/export-cores/data/]
+2017-05-23 14:24:34.969 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@482bce4f
+2017-05-23 14:24:34.985 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-05-23 14:24:34.993 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-05-23 14:24:34.994 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-05-23 14:24:35.016 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-05-23 14:24:35.016 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-05-23 14:24:35.314 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-05-23 14:24:35.314 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-05-23 14:24:35.368 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-05-23 14:24:35.368 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-05-23 14:24:35.390 INFO  (qtp834133664-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1495549474938} status=0 QTime=17
+2017-05-23 14:24:35.587 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-05-23 14:24:35.587 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-05-23 14:24:35.675 INFO  (qtp834133664-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1495549474940} status=0 QTime=301
+2017-05-23 14:24:35.757 INFO  (qtp834133664-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1495549474940} status=0 QTime=40
+2017-05-23 14:24:35.838 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@47481f6d[thecores1] main]
+2017-05-23 14:24:35.838 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/harbouj/mycode/project/solr2/server/solr/thecores1/conf
+2017-05-23 14:24:35.839 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-05-23 14:24:35.839 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-05-23 14:24:35.840 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-05-23 14:24:35.846 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.s.Suggester init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=Title,threshold=0.005,buildOnCommit=true}
+2017-05-23 14:24:35.855 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: suggest
+2017-05-23 14:24:35.856 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/harbouj/mycode/project/solr2/server/solr/thecores1/conf/elevate.xml
+2017-05-23 14:24:35.896 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-05-23 14:24:35.917 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@47481f6d[thecores1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_16(6.4.2):C29)))}
+2017-05-23 14:24:35.917 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-05-23 14:24:35.917 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-05-23 14:24:35.917 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: suggest
+2017-05-23 14:24:35.917 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.s.s.Suggester reload()
+2017-05-23 14:24:35.918 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.s.s.Suggester build()
+2017-05-23 14:24:36.003 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@fd3aee8[export-cores] main]
+2017-05-23 14:24:36.004 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/harbouj/mycode/project/solr2/server/solr/export-cores/conf
+2017-05-23 14:24:36.004 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-05-23 14:24:36.004 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-05-23 14:24:36.005 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/harbouj/mycode/project/solr2/server/solr/export-cores/conf/elevate.xml
+2017-05-23 14:24:36.063 INFO  (searcherExecutor-22-thread-1) [   ] o.a.s.c.SolrCore [thecores1] Registered new searcher Searcher@47481f6d[thecores1] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_16(6.4.2):C29)))}
+2017-05-23 14:24:36.076 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-05-23 14:24:36.089 INFO  (searcherExecutor-26-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@fd3aee8[export-cores] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_21(6.4.2):C70/2:delGen=2) Uninverting(_2c(6.4.2):c10) Uninverting(_2d(6.4.2):C1) Uninverting(_2e(6.4.2):C1)))}
+2017-05-23 14:24:36.090 INFO  (searcherExecutor-26-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-05-23 14:24:36.090 INFO  (searcherExecutor-26-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-05-23 14:24:36.091 INFO  (searcherExecutor-26-thread-1) [   ] o.a.s.c.SolrCore [export-cores] Registered new searcher Searcher@fd3aee8[export-cores] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_21(6.4.2):C70/2:delGen=2) Uninverting(_2c(6.4.2):c10) Uninverting(_2d(6.4.2):C1) Uninverting(_2e(6.4.2):C1)))}
+2017-05-23 14:24:36.102 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@67a4e770[core-lang] main]
+2017-05-23 14:24:36.104 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/harbouj/mycode/project/solr2/server/solr/core-lang/conf
+2017-05-23 14:24:36.104 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-05-23 14:24:36.104 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-05-23 14:24:36.105 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/harbouj/mycode/project/solr2/server/solr/core-lang/conf/elevate.xml
+2017-05-23 14:24:36.120 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-05-23 14:24:36.121 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@67a4e770[core-lang] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_37(6.4.2):C90/27:delGen=7) Uninverting(_3b(6.4.2):C1) Uninverting(_3c(6.4.2):C1) Uninverting(_3d(6.4.2):C1)))}
+2017-05-23 14:24:36.121 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-05-23 14:24:36.121 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-05-23 14:24:36.123 INFO  (searcherExecutor-24-thread-1) [   ] o.a.s.c.SolrCore [core-lang] Registered new searcher Searcher@67a4e770[core-lang] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_37(6.4.2):C90/27:delGen=7) Uninverting(_3b(6.4.2):C1) Uninverting(_3c(6.4.2):C1) Uninverting(_3d(6.4.2):C1)))}

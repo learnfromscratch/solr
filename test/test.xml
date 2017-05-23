@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ele xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<attr1>
+		  Atrr1 Value 1
+	  </attr1>
+	  <attr2>
+		    Attr2 Value 1
+	    </attr2>
+	    <meta property="meta1">
+		      Meta 1 Val 1
+	      </meta>
+	      <meta property="meta2">
+		        Meta 2 Val 1
+		</meta>
+		<meta name="name1">
+			  Name 1 value 1
+		  </meta>
+		  <meta name="name2">
+			    Name 2 value 1
+		    </meta>
+	    </ele>
